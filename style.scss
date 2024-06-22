@@ -1,0 +1,1328 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+@import '_fonts';
+
+
+
+* {
+
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+
+html {
+
+
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: rgb(255, 245, 231);
+    background-color: rgb(227, 244, 245);
+
+
+
+}
+
+
+body {
+
+
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Montserrat_extra_light';
+
+
+
+}
+
+
+
+a {
+
+    outline: none;
+    text-decoration: none;
+    color: red;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+
+
+ul {
+    li {
+
+        list-style: none;
+
+    }
+}
+
+
+
+
+::selection {
+    color: rgb(17, 9, 9);
+    background: rgb(214, 214, 218);
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+header {
+    background-color: rgb(121, 0, 226);
+    //  background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    //  border-bottom: 1px solid rgb(54, 54, 54);
+
+    padding: 1vw;
+
+    .header-p {
+
+        font-family: 'SourceSansPro-regular';
+
+        text-align: center;
+
+
+
+        font-size: 1.15vw;
+
+    }
+
+}
+
+
+nav {
+    background-color: rgb(248, 248, 248);
+    padding: .5vw .1vw;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.100), 0 4px 12px rgba(0, 0, 0, 0.100);
+
+    ul {
+        display: grid;
+        grid-template-columns: 15% 5% 40% 20% 5% 5% 5% 5%;
+
+
+    }
+
+    .nav-ul {
+        .nav-brand {
+            img {
+                width: 100%;
+            }
+        }
+
+        .nav-cat {
+            .nav-cat-p {
+                color: rgb(0, 0, 0);
+                margin-top: 1.65vw;
+                position: relative;
+                left: 1vw;
+                font-size: 1.05vw;
+                font-family: 'Raleway_light';
+
+            }
+        }
+
+        .nav-sr {
+            margin-top: 1vw;
+            margin-left: 1.5vw;
+
+
+
+
+            i {
+                color: hsl(0, 53%, 69%);
+                transform: translate(2vw, .12vw);
+
+
+            }
+
+            input {
+                padding: .75vw;
+                padding-left: 2.5vw;
+                border-radius: 25px;
+                width: 35vw;
+
+                font-family: 'Red_Hat_Display_medium';
+                border: 1px solid rgb(165, 160, 160);
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+        .nav-bs {
+            color: rgb(17, 16, 16);
+            margin-top: 1.6vw;
+            font-family: 'Quicksand_medium';
+            font-size: 1vw;
+            display: flex;
+
+            .nav-bpx {
+                margin-left: 1.5vw;
+            }
+
+        }
+
+        .nav-a {
+            color: black;
+            margin-top: 1.5vw;
+            font-size: 1.25vw;
+
+
+        }
+
+        .nav-btn {
+            margin-top: .75vw;
+            margin-left: -1vw;
+
+            .nav-btnl {
+                border: 1px solid black;
+                padding: .65vw 1vw;
+
+                background-color: transparent;
+                font-family: 'Poppins_light';
+
+            }
+
+            .nav-btns {
+                white-space: nowrap;
+                margin-left: 1vw;
+                background-color: black;
+                color: snow;
+            }
+
+
+
+
+
+
+        }
+
+        .nav-lg {
+            color: black;
+            margin: 1vw;
+            margin-top: .7vw;
+            font-size: 1.4vw;
+
+            i {
+                border: 1px solid rgba(41, 39, 39, 0.75);
+                border-radius: 20px;
+                padding: .6vw;
+            }
+        }
+    }
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.div-1-text {
+    position: absolute;
+    z-index: 1000;
+    background-color: #00262b57;
+    width: 75%;
+    padding: 5vw 9.5vw;
+    clip-path: polygon(0% 0%, 86% 0, 100% 23%, 100% 100%, 0% 100%);
+
+
+    top: 20.3vw;
+    // border-bottom: 5vw solid black;
+
+    .div-1-h1 {
+        margin-bottom: 1.5vw;
+        font-size: 2.75vw;
+        font-family: 'SourceSansPro-SemiBold';
+        color: rgb(236, 222, 222);
+
+
+    }
+
+    .div-1-p {
+        font-size: 1.05vw;
+
+
+    }
+
+
+    .search {
+        margin-top: 3.5vw;
+
+        input {
+            padding: .75vw;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+
+    }
+
+    .search::after {
+        content: "";
+        width: 35vw;
+        height: 2px;
+        background-color: rgb(145, 148, 99);
+        position: absolute;
+        margin-top: 1.25vw;
+        margin-left: 2vw;
+    }
+
+
+    .div-1-p-xp {
+        margin-top: 2vw;
+        border-bottom: 2px solid rgb(99, 247, 0);
+        width: 23%;
+        padding-bottom: .25vw;
+        color: rgb(0, 255, 0);
+        font-size: 1.1vw;
+
+    }
+
+
+
+
+}
+
+.div-1-text-2 {
+
+
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(23, 16, 31);
+    top: 46vw;
+    padding: 2vw;
+    z-index: 1000;
+
+    .div-1-p-2 {
+
+        font-size: 1vw;
+
+    }
+}
+
+.div-1 {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 40vw;
+
+    video {
+        //  z-index: -1;
+        filter: brightness(.75);
+        // height: 700px;
+        object-fit: cover;
+        position: relative;
+        top: -10vw;
+    }
+
+
+}
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.div-2 {
+    color: black;
+    margin-top: 7.5vw;
+
+    .div-2-text {
+        margin: 2.5vw 5vw;
+
+        .div-2-h2 {
+
+            font-size: 3vw;
+
+            font-family: 'PTSansCaption-Regular';
+
+
+        }
+
+        .div-2-p {
+
+            margin: 2vw 0 1vw 0;
+            font-size: 1.2vw;
+            font-family: 'Oswald-Light';
+            font-family: 'Montserrat_light';
+
+        }
+
+    }
+
+
+    .div-2-ul-div {
+        margin: 1vw 5vw;
+
+        .div-2-ul {
+            color: black;
+            display: flex;
+            flex-direction: row;
+
+            .div-2-li {
+                font-family: 'AlmendraDisplay-medium';
+                margin-right: 2vw;
+
+            }
+
+            .div-2-li-x {
+                font-family: 'AlmendraDisplay-Regular';
+                color: darkcyan;
+                margin-right: 2vw;
+
+
+            }
+        }
+    }
+
+
+    .div-2-carousel {
+        margin: 5vw;
+        border: 1px solid grey;
+        padding: 3vw;
+        padding-top: 1.5vw;
+        padding-left: 1.5vw;
+
+
+        .carousel-text {
+            .div-2-h2 {
+                font-size: 1.75vw;
+                font-family: 'Buda-Light';
+                font-family: 'FleurDeLeah-Regular';
+
+            }
+
+            .div-2-p-y {
+                margin: 1.5vw;
+                margin-bottom: 2.5vw;
+                //  font-family: 'Lato_light';
+                font-family: 'Montserrat_light';
+
+                font-size: 1vw;
+            }
+        }
+
+
+        .carousel {
+            margin-top: 2vw;
+
+
+
+            .media-scroller {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 30%;
+                overflow-x: auto;
+                scroll-snap-align: start;
+                overscroll-behavior-inline: contain;
+                //   margin-bottom: 5vw;
+                padding-bottom: 5vw;
+
+                .media-element {
+                    padding: 2vw 0;
+                    margin: 2vw 2.5vw;
+                    background-color: aqua;
+                    border-radius: 2.5px;
+                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+                    img {
+                        padding: 1vw;
+                        //     width: 25%;
+                        inline-size: 100%;
+                        aspect-ratio: 16/9;
+                        object-fit: cover;
+
+                    }
+
+                    .media-p {
+                        width: 100%;
+                        padding: 1vw;
+
+                        font-family: 'Montserrat_medium';
+
+
+                    }
+
+                    .media-h4 {
+                        margin-left: 1vw;
+                    }
+
+                    .stars {
+
+                        margin-top: .75vw;
+                        margin-left: .95vw;
+
+                        color: rgb(168, 149, 42);
+
+                        .star-grid {
+
+
+                            display: grid;
+                            grid-template-columns: 2.5vw 10vw 1.5vw;
+
+                            .star-text {
+                                font-size: 1.35vw;
+                                margin-left: .25vw;
+
+                                font-family: 'Work_Sans_medium';
+
+                            }
+
+                            .star-text-2 {
+                                font-family: 'Montserrat_medium';
+                                transform: translateX(-2vw);
+                                font-size: 1vw;
+                            }
+
+                        }
+
+
+
+
+
+                    }
+
+                    .price {
+                        margin-left: 1.2vw;
+                        margin-top: .75vw;
+                        font-size: 1.25vw;
+                        font-family: 'Montserrat_light';
+
+                    }
+
+                    .add {
+                        text-align: left;
+                        margin-left: 1vw;
+                        margin-top: 1vw;
+
+                        button {
+                            margin-right: .5vw;
+                            font-size: .85vw;
+                            padding: .5vw;
+                            font-family: 'Work_Sans_medium';
+                            border: 1px solid rgb(116, 99, 99);
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.div-3 {
+    .div-3-text {
+        .div-3-h1 {
+            font-size: 2.5vw;
+            color: black;
+            text-align: center;
+            word-spacing: .5vw;
+            font-family: 'Montserrat_medium';
+
+        }
+    }
+
+    .div-3-carousel {
+        .carousel {
+            margin-top: 2vw;
+
+
+
+            .media-scroller {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 30%;
+                overflow-x: auto;
+                scroll-snap-align: start;
+                overscroll-behavior-inline: contain;
+                //   margin-bottom: 5vw;
+                padding-bottom: 5vw;
+
+                .media-element {
+                    padding: 2vw 0;
+                    margin: 2vw 2.5vw;
+                    background-color: aqua;
+                    border-radius: 2.5px;
+                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+
+
+
+                    img {
+                        padding: 1vw;
+                        //     width: 25%;
+                        inline-size: 100%;
+                        aspect-ratio: 16/9;
+                        object-fit: cover;
+
+                    }
+
+                    .media-p {
+                        width: 100%;
+                        padding: 1vw;
+
+                        font-family: 'Montserrat_medium';
+
+
+                    }
+
+                    .media-h4 {
+                        margin-left: 1vw;
+                    }
+
+                    .stars {
+
+                        margin-top: .75vw;
+                        margin-left: .95vw;
+
+                        color: rgb(168, 149, 42);
+
+                        .star-grid {
+
+                            margin-left: 4.25vw;
+
+
+                            display: grid;
+                            grid-template-columns: 2.5vw 10vw 1.5vw;
+
+                            .star-text {
+                                font-size: 1.35vw;
+                                margin-left: .25vw;
+
+                                font-family: 'Work_Sans_medium';
+
+                            }
+
+                            .star-text-2 {
+                                font-family: 'Montserrat_medium';
+
+                                font-size: 1vw;
+                            }
+
+                        }
+
+
+
+
+
+                    }
+
+                    .price {
+                        margin-left: 1.2vw;
+                        margin-top: .75vw;
+                        font-size: 1.25vw;
+                        font-family: 'Montserrat_light';
+                        color: red;
+
+                    }
+
+                    .add {
+                        text-align: left;
+                        margin-left: 1vw;
+                        margin-top: 1vw;
+                        margin-left: 3.75vw;
+
+                        button {
+                            margin-right: .5vw;
+                            font-size: .85vw;
+                            padding: .5vw;
+                            font-family: 'Work_Sans_medium';
+                            border: 1px solid rgb(116, 99, 99);
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.div-4 {
+
+    //height: 50vw;
+    color: snow;
+    background-color: rgb(24, 24, 26);
+
+
+    .div-4-text {
+        margin: 5vw;
+
+        .div-4-h1 {
+            padding: 5vw;
+            padding-bottom: 2vw;
+            font-size: 3vw;
+            word-spacing: .25vw;
+            font-family: 'Lato_bold';
+            border-bottom: 4px solid snow;
+
+        }
+
+        .div-4-p {
+            margin-top: 2vw;
+            font-size: 1.1vw;
+            font-family: 'LexendTera-Light';
+            border-bottom: 5px solid rgb(128, 102, 102);
+            position: absolute;
+            padding-bottom: 15vw;
+
+
+        }
+    }
+
+
+
+    .car-div {
+        margin-left: 25vw;
+    }
+
+
+    .div-4-carousel {
+
+
+        .carousel {
+            margin-top: 10vw;
+
+
+
+            .media-scroller {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 50%;
+                overflow-x: auto;
+                scroll-snap-align: start;
+                overscroll-behavior-inline: contain;
+                //   margin-bottom: 5vw;
+                padding-bottom: 5vw;
+
+                .media-element {
+                    padding: 2vw 0;
+                    margin: 2vw 2.5vw;
+                    background-color: aqua;
+                    border-radius: 2.5px;
+                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+
+
+
+                    img {
+                        padding: 1vw;
+                        //     width: 25%;
+                        inline-size: 100%;
+                        aspect-ratio: 16/9;
+                        object-fit: cover;
+
+                    }
+
+                    .media-p {
+                        width: 100%;
+                        padding: 1vw;
+
+                        font-family: 'Montserrat_medium';
+
+
+                    }
+
+                    .media-h4 {
+                        margin-left: 1vw;
+                    }
+
+                    .stars {
+
+                        margin-top: .75vw;
+                        margin-left: .95vw;
+
+                        color: rgb(168, 149, 42);
+
+                        .star-grid {
+
+                            margin-left: 4.25vw;
+
+
+                            display: grid;
+                            grid-template-columns: 2.5vw 10vw 1.5vw;
+
+                            .star-text {
+                                font-size: 1.35vw;
+                                margin-left: .25vw;
+
+                                font-family: 'Work_Sans_medium';
+
+                            }
+
+                            .star-text-2 {
+                                font-family: 'Montserrat_medium';
+
+                                font-size: 1vw;
+                            }
+
+                        }
+
+
+
+
+
+                    }
+
+                    .price {
+                        margin-left: 1.2vw;
+                        margin-top: .75vw;
+                        font-size: 1.25vw;
+                        font-family: 'Montserrat_light';
+                        color: red;
+
+                    }
+
+                    .add {
+                        text-align: left;
+                        margin-left: 1vw;
+                        margin-top: 1vw;
+                        margin-left: 3.75vw;
+
+                        button {
+                            margin-right: .5vw;
+                            font-size: .85vw;
+                            padding: .5vw;
+                            font-family: 'Work_Sans_medium';
+                            border: 1px solid rgb(116, 99, 99);
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+.div-5 {
+    color: black;
+    background-color: rgb(215, 227, 231);
+    height: 60vw;
+
+
+    .div-5-text {
+
+        // margin: 10vw;
+        .div-5-h1 {
+            font-size: 3.5vw;
+            font-family: 'Nunito';
+            padding: 7.5vw;
+            word-spacing: .25vw;
+            font-family: 'SourceSansPro-SemiBold';
+            color: rgb(26, 26, 37);
+            padding-bottom: 2.5vw;
+
+
+            font-family: 'RobotoSlab-Medium';
+            font-family: 'PTSansCaption-Regular';
+
+
+
+
+        }
+
+        .div-5-p {
+            width: 80%;
+            margin-left: 8vw;
+            font-size: 1.25vw;
+
+            font-family: 'OpenSans-Medium';
+
+        }
+    }
+
+
+    .div-5-grid {
+        margin: 5vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3.5vw;
+
+        .div-5-help {
+
+            img {
+                border-radius: 25px;
+                border-bottom-left-radius: 0;
+                filter: brightness(.95);
+            }
+
+
+            video {
+
+                border-radius: 25px;
+                border-bottom-left-radius: 0;
+                filter: brightness(.95);
+                width: 100%;
+
+
+
+
+            }
+
+            .div-5-h2 {
+                margin-top: 2.5vw;
+                font-family: 'Lora-Regular';
+
+            }
+
+            .div-5-p {
+                margin: 1.25vw 0;
+                font-family: 'ZenKurenaido-Regular';
+
+            }
+
+            .div-5-h3 {
+                font-size: 1.25vw;
+                color: red;
+            }
+        }
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+.div-6 {
+    background-image: url('images/c\ \(11\).jpg');
+
+    height: 45vw;
+    margin-top: 5vw;
+    background-size: cover;
+    background-position: center;
+
+    // background-attachment: fixed;
+    .div-6-grid {
+
+
+
+
+        .div-6-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 57%;
+            color: rgb(241, 224, 224);
+            padding: 7.5vw;
+            transform: translateY(5vw);
+            font-family: 'SourceSansPro-SemiBold';
+            font-family: 'PTSansCaption-Regular';
+            font-family: 'OpenSans-Medium';
+
+
+            .div-6-h1 {
+                font-size: 3vw;
+                font-family: 'Trochut-Regular';
+
+            }
+
+            .div-6-p {
+                margin-top: 2vw;
+                font-family: 'LexendTera-Medium';
+                font-family: 'Buda-Light';
+                font-family: 'Lato_light';
+                font-size: 1.2vw;
+
+            }
+
+            .email-input {
+                margin-top: 5vw;
+                width: 25vw;
+                padding: 1vw;
+                border-bottom: 7.5px solid rgb(155, 132, 132);
+                background-color: transparent;
+                font-size: 1.25vw;
+                font-family: 'Libre_Barcode_128';
+                font-family: 'Montserrat_regular';
+                color: snow;
+
+            }
+
+            .send {
+                margin-left: 2.5vw;
+                padding: 1.25vw;
+                border-radius: 10px;
+                background-color: rgb(35, 53, 53);
+                border: 5px solid rgb(160, 136, 136);
+                font-size: 1vw;
+                font-family: 'Montserrat_regular';
+                color: rgb(196, 186, 186);
+
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.div-7 {
+    color: black;
+    margin-top: 5vw;
+    margin-left: 7.5vw;
+    height: 50vw;
+    margin-right: 5vw;
+
+    .div-7-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5vw;
+
+        .div-7-c {
+            .div-7-h2 {
+                font-family: 'Major_Mono_Display';
+                font-family: 'Lato_regular';
+
+                font-size: 2.5vw;
+                padding: 1vw;
+                //  padding-left: 2vw;
+                border-bottom: 2.5px solid rgb(16, 14, 17);
+            }
+
+            .div-7-h1 {
+                margin-top: 2vw;
+                margin-bottom: 1vw;
+                font-family: 'BirthstoneBounce-Medium';
+
+            }
+
+            .div-7-p {
+                font-family: 'AlmendraDisplay-Regular';
+                margin-top: 1.5vw;
+
+                font-size: 1.15vw;
+            }
+        }
+
+    }
+
+    .img-c {
+        display: flex;
+
+        img {
+            width: 25%;
+            margin-top: 2.5vw;
+            margin-right: 2.5vw;
+            margin-left: 3vw;
+        }
+    }
+
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+.div-8 {
+    height: 50vw;
+    background-color: rgb(13, 13, 29);
+    margin-top: 5vw;
+
+    .div-8-grid {
+        display: grid;
+        grid-template-columns: 35vw 60vw;
+        overflow: hidden;
+        grid-gap: 5vw;
+
+        .div-8-text {
+            //  width: 70%;
+            //margin: 5vw;
+            padding: 5vw;
+            padding-top: 1vw;
+
+            .div-8-h1 {
+                text-align: center;
+                font-family: 'NotoSerifDisplay_Condensed-light';
+                margin-top: 5vw;
+
+            }
+
+            .div-8-h3 {
+                text-align: center;
+                font-family: 'SourceSansPro-Regular';
+                margin-top: 2.5vw;
+            }
+
+
+            .icons {
+                margin-top: 2vw;
+                text-align: center;
+                color: black;
+
+                .icon {
+                    display: flex;
+                    background-color: aliceblue;
+                    //width: 80%;
+                    text-align: center;
+                    padding: .75vw;
+                    padding-left: 5vw;
+                    border-radius: 50px;
+                    margin-bottom: 2vw;
+
+                    img {
+                        width: 8%;
+                        margin-right: 1vw;
+                    }
+
+                    h4 {
+                        vertical-align: baseline;
+                        font-size: 1vw;
+                        margin-top: .15vw;
+                        color: black;
+
+                    }
+                }
+            }
+
+
+
+
+            .div-8-txt {
+                text-align: center;
+
+                .d8-p {
+                    text-align: center;
+                    font-size: 1.1vw;
+                }
+
+                .d8-p::before {
+                    content: "";
+                    width: 7.5vw;
+                    height: 1px;
+                    position: absolute;
+                    background-color: snow;
+                    color: snow;
+                    margin-top: .75vw;
+                    margin-left: 2.5vw;
+                }
+
+                .d8-p::after {
+                    content: "";
+                    width: 7.5vw;
+                    height: 1px;
+                    position: absolute;
+                    background-color: snow;
+                    color: snow;
+                    margin-top: .75vw;
+                    // margin-left: 2.5vw;
+                    margin-left: -10vw;
+                }
+
+                .d8-pp {
+                    margin-top: 1vw;
+                    font-family: 'RobotoSlab-Medium';
+                    font-size: 1.15vw;
+                    color: tomato;
+
+                }
+
+                .d8-ppp {
+                    margin-top: 1vw;
+                    font-size: 1.1vw;
+                    line-height: 1.85vw;
+                    font-family: 'PTSansCaption-Regular';
+                    font-family: 'OpenSans_Condensed-Light';
+
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+        .div-8-img {
+            margin-top: 17.5vw;
+
+            img {
+                border-radius: 50px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+
+        }
+
+
+    }
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.div-9 {
+    margin-top: 15vw;
+    margin-bottom: 5vw;
+
+
+    .div-9-grid {
+        padding: 5vw;
+        margin-left: 15vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .div-9-vid {
+            video {
+                width: 75%;
+                border: 5px solid gray;
+            }
+        }
+
+        .div-9-text {
+            border-bottom: 2px solid black;
+            color: black;
+            margin-top: 4vw;
+            font-family: 'RobotoSlab-Medium';
+            text-align: center;
+
+            .div-9-p {
+                text-align: center;
+                // width: 75%;
+                margin-top: 1.5vw;
+            }
+
+            .div-9-btn {
+                margin-top: 2vw;
+                padding: 1vw;
+                background-color: black;
+                font-size: 1.1vw;
+                color: snow;
+            }
+        }
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+footer {
+    background-color: black;
+
+    //  height: 25vw;
+    .footer-grid {
+        padding: 5vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 2.5vw;
+        margin: 5vw;
+        margin-bottom: 0;
+        border-bottom: 2px solid rgb(82, 65, 65);
+
+        .f-1 {
+            text-align: center;
+
+            .f-h3 {
+                font-family: 'Oswald-Light';
+                font-family: 'Sail-Regular';
+                font-size: 1.5vw;
+                text-align: center;
+
+            }
+
+            .f-ul {
+                margin-top: 1.5vw;
+
+                .f-li {
+                    text-align: center;
+                    padding: .25vw;
+                    font-size: 1.15vw;
+                    font-family: 'LexendTera-Thin';
+
+                }
+            }
+        }
+    }
+
+
+    .footer-teleport {
+        padding: 5vw;
+        text-align: center;
+        font-size: 2.5vw;
+        font-family: 'BirthstoneBounce-Medium';
+        font-family: 'Montserrat_regular';
+
+    }
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
